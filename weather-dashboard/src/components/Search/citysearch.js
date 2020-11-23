@@ -9,14 +9,29 @@ class SearchCity extends Component {
     longitude : undefined,
   };
 
+  componentDidMount() {
+    let currentComponent = this;
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        var lat = position.coords.latitude;
+        var lon = position.coords.longitude;
+        //console.log(position);
+        axios.get("https://api.openweathermap.org/data/2.5/weather?lat=" + lat +"&lon=" +lon +"&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8")
+       .then((response) => {
+          //const name = response.data.name;
+          const lon = response.data.coord.lon;
+          const lat = response.data.coord.lat;
+          currentComponent.setState({
+            latitude: lat,
+            longitude: lon,
+          });
+        });
+      });
+    }
+  }
+  
   OnClickCitySearch = (event) => {
     event.preventDefault();
-    // localStorage.setItem("city-search", this.state.searchedCities);
-    // const { search, searchedCities } = this.state;
-    // searchedCities.unshift(search);
-    // while (searchedCities.length > 5) {
-    //   searchedCities.pop();
-    // }
     axios.get("https://api.openweathermap.org/data/2.5/weather?q=" + this.state.search + "&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8")
     .then((response) => {
       if (response.status === 400 || response.status === 500) {
@@ -60,7 +75,7 @@ class SearchCity extends Component {
                 <button
                   type="submit"
                   className="btnSearch btn "
-                  onClick={this.OnClickCitySearch}                >
+                  onClick={this.OnClickCitySearch}>
                   Search
                 </button>
               </div>
