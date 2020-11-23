@@ -10,6 +10,8 @@ function Homepage() {
       <SearchCity />
       <Footer />
     </div>
+  
+   
   );
 }
 export default Homepage;

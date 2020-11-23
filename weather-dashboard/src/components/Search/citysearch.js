@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import CurrentWeather from "../Currentweather/current";
+import "./citysearchstyle.css";
 
 class SearchCity extends Component {
   state = {
