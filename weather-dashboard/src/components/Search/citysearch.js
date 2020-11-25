@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import axios from "axios";
 import CurrentWeather from "../Currentweather/current";
 import LineChart from "../Charts/LineChart";
+import BarChart from "../Charts/BarChart";
+import UVChart from "../Charts/UVChart";
+import WindChart from "../Charts/WindChart";
 import "./citysearchstyle.css";
 
 class SearchCity extends Component {
@@ -91,7 +94,7 @@ class SearchCity extends Component {
           </div>
           </div>
           <br /><br />
-          <div className="row">
+          <div className="row side">
           <div className="col-6">
               <CurrentWeather
                 lat ={this.state.latitude}
@@ -104,7 +107,60 @@ class SearchCity extends Component {
                 lon ={this.state.longitude}
               />
           </div>
-        </div>
+          <div className="col-md-4 col-lg-4 col-sm-12">
+                <div className="cardbar">
+                <div className="card-body">
+              <BarChart
+                lat ={this.state.latitude}
+                lon ={this.state.longitude}
+              />
+          </div>          
+          </div>
+          </div>
+          <div className="col-md-4 col-lg-4 col-sm-12">
+                <div className="carduv">
+                <div className="card-body">
+              <UVChart
+                lat ={this.state.latitude}
+                lon ={this.state.longitude}
+              />
+          </div>          
+          </div>
+          </div>
+          <div className="col-md-4 col-lg-4 col-sm-12">
+                <div className="cardwind">
+                <div className="card-body">
+              <WindChart
+                lat ={this.state.latitude}
+                lon ={this.state.longitude}
+              />
+          </div>          
+          </div>
+          </div>
+          </div>
+          {/* <div className="row">
+          <div className="col-md-4 col-lg-4 col-sm-12">
+                <div className="carduv">
+                <div className="card-body">
+              <UVChart
+                lat ={this.state.latitude}
+                lon ={this.state.longitude}
+              />
+          </div>          
+          </div>
+          </div>
+          <div className="col-md-4 col-lg-4 col-sm-12">
+                <div className="cardwind">
+                <div className="card-body">
+              <WindChart
+                lat ={this.state.latitude}
+                lon ={this.state.longitude}
+              />
+          </div>          
+          </div>
+          </div>
+          </div> */}
+        
       </div>
     );
     }

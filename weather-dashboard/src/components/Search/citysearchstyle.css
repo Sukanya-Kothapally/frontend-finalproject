@@ -11,6 +11,32 @@
 }
 
 .btnSearch {
-  background-color: rgb(54, 59, 44);
-  color: white;
+  background-color: rgb(233, 152, 32);
+  color: black;
+}
+
+.cardbar {
+  box-shadow: 0 0 20px #ccc;
+  background-color: rgb(166, 216, 191);
+  width: 30em;
+  height: 20em;
+  text-align: center;
+}
+.carduv {
+  box-shadow: 0 0 20px #ccc;
+  background-color: rgb(233, 202, 230);
+  width: 15em;
+  height: 15em;
+  text-align: center;
+}
+.cardwind {
+  box-shadow: 0 0 20px #ccc;
+  background-color: rgb(228, 161, 122);
+  width: 15em;
+  height: 15em;
+  text-align: center;
+}
+.side {
+  display: flex;
+  flex-direction: row;
 }
