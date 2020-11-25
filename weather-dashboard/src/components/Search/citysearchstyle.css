@@ -15,6 +15,14 @@
   color: black;
 }
 
+.cardline {
+  box-shadow: 0 0 20px #ccc;
+  background-color: rgb(213, 235, 134);
+  width: 30em;
+  height: 15em;
+  text-align: center;
+}
+
 .cardbar {
   box-shadow: 0 0 20px #ccc;
   background-color: rgb(166, 216, 191);
@@ -36,6 +44,23 @@
   height: 15em;
   text-align: center;
 }
+
+.cardhum {
+  box-shadow: 0 0 20px #ccc;
+  background-color: rgb(235, 118, 219);
+  width: 18em;
+  height: 14em;
+  text-align: center;
+}
+
+.cardvis {
+  box-shadow: 0 0 20px #ccc;
+  background-color: rgb(238, 217, 209);
+  width: 30em;
+  height: 5em;
+  text-align: center;
+}
+
 .side {
   display: flex;
   flex-direction: row;
