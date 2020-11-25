@@ -1,0 +1,9 @@
+.weather-icon {
+  max-width: 50px;
+}
+.card {
+  box-shadow: 0 0 20px #ccc;
+  width: 20em;
+  height: 12em;
+  text-align: center;
+}
