@@ -1,6 +1,6 @@
 import React ,{Component} from 'react';
 import axios from "axios";
-
+import "./currentstyle.css";
 class CurrentWeather extends Component
 {
     constructor(props) {
@@ -9,6 +9,7 @@ class CurrentWeather extends Component
           name: undefined,
           temperature: undefined,
           description: undefined,
+          icon: undefined,
         };
       }
 
@@ -32,11 +33,12 @@ class CurrentWeather extends Component
             const des = response.data.weather[0].description;
             const temp = response.data.main.temp;
             const name = response.data.name;
-            
+            const icon = response.data.weather[0].icon;
             this.setState({
                 name: name,
                 temperature: temp,
                 description: des,
+                icon: icon,
             })
         });
       };
@@ -49,8 +51,11 @@ class CurrentWeather extends Component
                 <div className="col-md-4 col-lg-4 col-sm-12">
                 <div className="card">
                     <div className="card-body">
+                    <div>
+                       <img className="weather-icon" src={`http://openweathermap.org/img/w/${this.state.icon}.png`} alt="weather icon"/>
+                    </div> 
                         <p>{this.state.name}</p>
-                        <p>{this.state.temperature}</p>
+                        <p>{this.state.temperature}°F</p> 
                         <p>{this.state.description}</p>
                     </div>
                 </div>

@@ -6,6 +6,8 @@ import BarChart from "../Charts/BarChart";
 import UVChart from "../Charts/UVChart";
 import WindChart from "../Charts/WindChart";
 import "./citysearchstyle.css";
+import HumidityChart from "../Charts/HumidityChart";
+import VisibilityChart from "../Charts/VisibilityChart";
 
 class SearchCity extends Component {
   state = {
@@ -22,7 +24,10 @@ class SearchCity extends Component {
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
         //console.log(position);
-        axios.get("https://api.openweathermap.org/data/2.5/weather?lat=" + lat +"&lon=" +lon +"&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8")
+        axios.get
+        (
+          "https://api.openweathermap.org/data/2.5/weather?lat=" + lat +"&lon=" +lon +"&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8"
+        )
        .then((response) => {
           const name = response.data.name;
           const lon = response.data.coord.lon;
@@ -92,20 +97,25 @@ class SearchCity extends Component {
                 </button>
             </div>
           </div>
-          </div>
+        </div>
           <br /><br />
-          <div className="row side">
-          <div className="col-6">
+          <div className="row">
+            <div className="col-1"></div>
+          <div className="col-md-4 col-lg-4 col-sm-12">
               <CurrentWeather
                 lat ={this.state.latitude}
                 lon ={this.state.longitude}
               />
           </div>
-          <div className="col-6">
+          <div className="col-md-4 col-lg-4 col-sm-12">
+                <div className="cardline">
+                <div className="card-body">
               <LineChart
                 lat ={this.state.latitude}
                 lon ={this.state.longitude}
               />
+          </div>
+          </div>
           </div>
           <div className="col-md-4 col-lg-4 col-sm-12">
                 <div className="cardbar">
@@ -138,29 +148,30 @@ class SearchCity extends Component {
           </div>
           </div>
           </div>
-          {/* <div className="row">
-          <div className="col-md-4 col-lg-4 col-sm-12">
-                <div className="carduv">
-                <div className="card-body">
-              <UVChart
+        <div className="row">
+        <div className="col-md-4 col-lg-4 col-sm-12">
+        <div className="cardhum">
+        <div className="card-body">
+          <HumidityChart
                 lat ={this.state.latitude}
                 lon ={this.state.longitude}
               />
-          </div>          
-          </div>
-          </div>
-          <div className="col-md-4 col-lg-4 col-sm-12">
-                <div className="cardwind">
-                <div className="card-body">
-              <WindChart
+              </div>
+              </div>
+              </div>
+        </div>
+        <div className="row">
+        <div className="col-md-4 col-lg-4 col-sm-12">
+        <div className="cardvis">
+        <div className="card-body">
+          <VisibilityChart
                 lat ={this.state.latitude}
                 lon ={this.state.longitude}
               />
-          </div>          
-          </div>
-          </div>
-          </div> */}
-        
+        </div>
+        </div>
+        </div>
+        </div>
       </div>
     );
     }
@@ -168,7 +179,7 @@ class SearchCity extends Component {
       return(
       <div className="container">
       <div className="row">
-      <div className=" ml-auto col-md-6  col-sm-6  ">
+      <div className=" ml-auto col-md-6  col-sm-6">
         <div className=" input-group row">
           <input
             className="inputSearch form-control"
