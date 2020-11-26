@@ -1,6 +1,8 @@
 import React from "react";
 import axios from "axios";
-import ReactStoreIndicator from 'react-score-indicator'
+import ReactStoreIndicator from 'react-score-indicator';
+import "./UVChart.css";
+
 class UVChart extends React.Component {
     constructor(props) {
         super(props);
