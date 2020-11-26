@@ -3,7 +3,17 @@
 }
 .card {
   box-shadow: 0 0 20px #ccc;
+  background-color: rgba(250, 250, 250, 0.9);
   width: 20em;
   height: 12em;
   text-align: center;
+}
+
+.locname {
+  font-size: 25px;
+  color: #ff6700;
+}
+
+.loctemp {
+  color: #222222;
 }
