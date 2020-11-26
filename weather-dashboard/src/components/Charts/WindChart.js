@@ -34,7 +34,7 @@ class Windchart extends React.Component {
           render(){
               return(
                   <div>
-                      <p>Wind Speed</p>
+                      <p class="ws"><b>Wind Speed</b></p>
                       <Electricity 
                       value={this.state.wind}
                       height={this.state.height}
