@@ -1,6 +1,7 @@
 import React, {Component} from "react";
 import {Humidity} from 'react-environment-chart';
 import axios from "axios";
+import "./Humidity.css";
 
 class HumidityChart extends Component
 {
