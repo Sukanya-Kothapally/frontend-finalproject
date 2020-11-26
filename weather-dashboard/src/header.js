@@ -26,7 +26,7 @@ const Header = () => {
             >  
             <NavbarBrand style={headStyle} href="/">
               <img src={logo} width="40"   height="35" alt="weather icon" />
-              <span>Weather Dashboard</span>
+              <span className="wtitle">&nbsp;Weather Dashboard</span>
             </NavbarBrand>
               <NavbarToggler className="toggle" onClick={handletoggle} aria-controls="basic-navbar-nav" 
               aria-label="Toggle navigation">
