@@ -54,9 +54,9 @@ class CurrentWeather extends Component
                     <div>
                        <img className="weather-icon" src={`http://openweathermap.org/img/w/${this.state.icon}.png`} alt="weather icon"/>
                     </div> 
-                        <p>{this.state.name}</p>
-                        <p>{this.state.temperature}°F</p> 
-                        <p>{this.state.description}</p>
+                        <p className="locname"><b>{this.state.name}</b></p>
+                        <p className="loctemp"><b>{this.state.temperature}°F</b></p> 
+                        <p>You will experience {this.state.description}</p>
                     </div>
                 </div>
             </div>
