@@ -31,11 +31,11 @@ class VisibilityChart extends React.Component {
             datasets: [
               {
                 label: 'Visibilty',
-                backgroundColor: 'rgba(255,99,132,0.2)',
-                borderColor: 'rgba(255,99,132,1)',
+                backgroundColor: '#fac146',
+                borderColor: '#fac146',
                 borderWidth: 0,
-                hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-                hoverBorderColor: 'rgba(255,99,132,1)',
+                hoverBackgroundColor: '#fac146',
+                hoverBorderColor: '#fac146',
                 data: vis
 
               }
