@@ -5,9 +5,9 @@ import LineChart from "../Charts/LineChart";
 import BarChart from "../Charts/BarChart";
 import UVChart from "../Charts/UVChart";
 import WindChart from "../Charts/WindChart";
-import "./citysearchstyle.css";
 import HumidityChart from "../Charts/HumidityChart";
 import VisibilityChart from "../Charts/VisibilityChart";
+import "./citysearchstyle.css";
 
 class SearchCity extends Component {
   state = {
@@ -78,8 +78,8 @@ class SearchCity extends Component {
     return (
       <div className="container">
         <div className="row">
-          <div className=" ml-auto col-md-6  col-sm-6  ">
-            <div className=" input-group row">
+          <div className=" ml-auto col-md-6 col-lg-6 col-sm-8">
+            <div className=" input-group inputfield">
               <input
                 className="inputSearch form-control"
                 type="text"
@@ -159,7 +159,7 @@ class SearchCity extends Component {
               </div>
               </div>
               </div>
-        </div>
+        </div><br></br>
         <div className="row">
         <div className="col-md-4 col-lg-4 col-sm-12">
         <div className="cardvis">
@@ -179,8 +179,8 @@ class SearchCity extends Component {
       return(
       <div className="container">
       <div className="row">
-      <div className=" ml-auto col-md-6  col-sm-6">
-        <div className=" input-group row">
+      <div className=" ml-auto col-md-6  col-lg-6 col-sm-8">
+        <div className=" input-group inputfield">
           <input
             className="inputSearch form-control"
             type="text"
