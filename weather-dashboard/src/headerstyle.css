@@ -6,7 +6,12 @@
 
 .nav-link {
   font-size: 15px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+}
+
+.wtitle {
+  font-weight: bold;
+  letter-spacing: 0.5px;
 }
 
 .toggle {
