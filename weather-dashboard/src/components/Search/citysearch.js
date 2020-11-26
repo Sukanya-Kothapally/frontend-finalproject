@@ -116,14 +116,16 @@ class SearchCity extends Component {
         </div>
           <br /><br />
           <div className="row">
-            <div className="col-1"></div>
+            <div className="col-3"></div>
           <div className="col-md-4 col-lg-4 col-sm-12">
               <CurrentWeather
                 lat ={this.state.latitude}
                 lon ={this.state.longitude}
               />
           </div>
-          <div className="col-md-4 col-lg-4 col-sm-12">
+          </div>
+          <div className="row mt-4">
+          <div className="mx-auto col-md-6 col-lg-4 col-sm-12">
                 <div className="cardline">
                 <div className="card-body">
               <LineChart
@@ -133,7 +135,7 @@ class SearchCity extends Component {
           </div>
           </div>
           </div>
-          <div className="col-md-4 col-lg-4 col-sm-12">
+          <div className="mx-auto col-md-6 col-lg-4 col-sm-12">
                 <div className="cardbar">
                 <div className="card-body">
               <BarChart
@@ -143,6 +145,8 @@ class SearchCity extends Component {
           </div>          
           </div>
           </div>
+        </div>
+        <div className="row uvw mt-4">
           <div className="col-md-4 col-lg-4 col-sm-12">
                 <div className="carduv">
                 <div className="card-body">
@@ -163,8 +167,6 @@ class SearchCity extends Component {
           </div>          
           </div>
           </div>
-          </div>
-        <div className="row">
         <div className="col-md-4 col-lg-4 col-sm-12">
         <div className="cardhum">
         <div className="card-body">
@@ -175,8 +177,8 @@ class SearchCity extends Component {
               </div>
               </div>
               </div>
-        </div><br></br>
-        <div className="row">
+        </div>
+        <div className="row mt-4">
         <div className="col-md-4 col-lg-4 col-sm-12">
         <div className="cardvis">
         <div className="card-body">
