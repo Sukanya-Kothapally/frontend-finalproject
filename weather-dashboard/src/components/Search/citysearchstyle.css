@@ -17,8 +17,8 @@
 .cardline {
   box-shadow: 0 0 20px #ccc;
   background-color: #fafafa;
-  width: 30em;
-  height: 20em;
+  width: 25em;
+  height: 15em;
   text-align: center;
   border-radius: 7px;
 }
@@ -26,8 +26,8 @@
 .cardbar {
   box-shadow: 0 0 20px #ccc;
   background-color: #fafafa;
-  width: 30em;
-  height: 20em;
+  width: 25em;
+  height: 15em;
   text-align: center;
 }
 .carduv {
@@ -68,4 +68,13 @@
 
 .inputfield {
   padding: 10px;
+}
+
+.uvw {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.uvw > div[class*="col-"] {
+  display: flex;
 }
