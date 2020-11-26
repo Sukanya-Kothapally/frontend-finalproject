@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import {Electricity} from 'react-environment-chart';
+import "./WindChart.css";
 
 class Windchart extends React.Component {
     constructor(props) {
