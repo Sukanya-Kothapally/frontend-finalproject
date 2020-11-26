@@ -2,7 +2,6 @@ import React, {Component} from "react";
 import {Humidity} from 'react-environment-chart';
 import axios from "axios";
 
-
 class HumidityChart extends Component
 {
     constructor(props) {
@@ -33,7 +32,7 @@ class HumidityChart extends Component
 
             this.setState({
                 humidity: hum,
-                height: 120,
+                height: 130,
             })
         });
       };
@@ -42,7 +41,7 @@ class HumidityChart extends Component
      render() {
         return (
           <div>
-              <p className="humidity">Humidity</p>
+              <p className="humidity"><b>Humidity</b></p>
               <Humidity
                 height = {this.state.height}
                 value = {this.state.humidity} />
