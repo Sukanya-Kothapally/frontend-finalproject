@@ -51,12 +51,13 @@ class CurrentWeather extends Component
                 <div className="col-md-4 col-lg-4 col-sm-12">
                 <div className="card">
                     <div className="card-body">
-                    <div>
-                       <img className="weather-icon" src={`http://openweathermap.org/img/w/${this.state.icon}.png`} alt="weather icon"/>
-                    </div> 
-                        <p className="locname"><b>{this.state.name}</b></p>
-                        <p className="loctemp"><b>{this.state.temperature}°F</b></p> 
-                        <p>You will experience {this.state.description}</p>
+                    <div className="d-flex justify-content-between">
+                          <div className="locname"><b>{this.state.name}</b></div>
+                            <div className="loctemp"><b>{this.state.temperature}°F</b> 
+                            <img className="weather-icon" src={`http://openweathermap.org/img/w/${this.state.icon}.png`} alt="weather icon"/>
+                            </div>
+                      </div>
+                      <div className="float-right">You will experience {this.state.description}</div>
                     </div>
                 </div>
             </div>
@@ -65,5 +66,4 @@ class CurrentWeather extends Component
         );
     }
 }
-    
 export default CurrentWeather;
