@@ -44,13 +44,15 @@ class SearchCity extends Component {
   
   OnClickCitySearch = (event) => {
     event.preventDefault();
+    var inputcity=this.state.search;
+    if(inputcity!==""){
     axios.get
     (
       "https://api.openweathermap.org/data/2.5/weather?q=" + this.state.search + "&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8"
     )
     .then((response) => {
-      if (response.status === 400 || response.status === 500) {
-        throw new Error(response.statusText);
+      if (response.status === 400 || response.status === 500 || response.status === 404) {
+        console.log("please enter valid city");
       }
       const name = response.data.name;
       const lon = response.data.coord.lon;
@@ -61,8 +63,22 @@ class SearchCity extends Component {
         latitude: lat,
         longitude: lon,
       });
-    });
-
+    })
+    .catch(err =>{
+      if(err.response){
+        alert("Please Give Valid City!");
+      }
+      else if (err.request) {
+        alert("Please Check Internet Connection")
+      } 
+      else {
+        alert("Please Give Valid City")
+      }
+    })
+  }
+  else{
+    alert("Please Enter City!");
+  }
   };
 
   onClickCityChange = (event) => {
