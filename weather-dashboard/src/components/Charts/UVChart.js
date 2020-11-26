@@ -1,12 +1,11 @@
 import React from "react";
 import axios from "axios";
 import ReactStoreIndicator from 'react-score-indicator'
-
 class UVChart extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-         uvindex:undefined,
+         uvindex:4,
          width:undefined,
          option:undefined    
         }
@@ -35,7 +34,7 @@ class UVChart extends React.Component {
           render(){
               return(
                   <div>
-                      <p>UVIndex</p>
+                      <p className="uv"><b>UVIndex</b></p>
                       <ReactStoreIndicator 
                       value={this.state.uvindex}
                       maxValue={12}
