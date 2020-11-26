@@ -42,7 +42,7 @@ class BarChart extends React.Component {
               {
                 label:"Minimum Temperature",
                 data:mintemp,
-                backgroundColor: "rgba(4, 116, 190, 1)",
+                backgroundColor: "#0090ff",
                 //borderColor: "rgba(255,99,132,1)",
                 borderWidth: 2,
   
@@ -50,7 +50,7 @@ class BarChart extends React.Component {
             {
               label:"Maximum Temperature",
               data:maxtemp,
-              backgroundColor: "rgba(190, 66, 4, 1)",
+              backgroundColor: "#ff2600",
               //borderColor: "rgba(255,99,132,1)",
               borderWidth: 2,
   
