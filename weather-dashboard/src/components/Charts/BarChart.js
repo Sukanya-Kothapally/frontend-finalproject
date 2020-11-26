@@ -36,7 +36,7 @@ class BarChart extends React.Component {
         this.setState({
           Data:{
             height:15,
-            width:30,
+            width:25,
             labels:days,
             datasets:[
               {
@@ -66,8 +66,8 @@ class BarChart extends React.Component {
         <div>
              <Bar
               data={this.state.Data}
-              width={30}
-              height={20}
+              width={25}
+              height={15}
               options={{
                 responsive: true,
   
