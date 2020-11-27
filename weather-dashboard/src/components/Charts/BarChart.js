@@ -66,8 +66,8 @@ class BarChart extends React.Component {
         <div>
              <Bar
               data={this.state.Data}
-              width={25}
-              height={15}
+              // width={25}
+              // height={15}
               options={{
                 responsive: true,
   
