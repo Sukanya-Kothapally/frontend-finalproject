@@ -17,40 +17,51 @@
 .cardline {
   box-shadow: 0 0 20px #ccc;
   background-color: #fafafa;
-  width: 25em;
-  height: 15em;
+  /* width: 25em; */
+  height: 20em;
   text-align: center;
   border-radius: 7px;
+  width: 32rem;
+  opacity: 0.9;
 }
 
 .cardbar {
   box-shadow: 0 0 20px #ccc;
   background-color: #fafafa;
-  width: 25em;
-  height: 15em;
+  /* width: 25em; */
+  height: 20em;
   text-align: center;
+  width: 32rem;
+  border-radius: 7px;
+  opacity: 0.9;
 }
 .carduv {
   box-shadow: 0 0 20px #ccc;
   background-color: #fafafa;
-  width: 15em;
+  /* width: 15em; */
   height: 15em;
   text-align: center;
+  border-radius: 7px;
+  opacity: 0.9;
 }
 .cardwind {
   box-shadow: 0 0 20px #ccc;
   background-color: #fafafa;
-  width: 15em;
+  /* width: 15em; */
   height: 15em;
   text-align: center;
+  border-radius: 7px;
+  opacity: 0.9;
 }
 
 .cardhum {
   box-shadow: 0 0 20px #ccc;
   background-color: #fafafa;
-  width: 19em;
-  height: 11em;
+  /* width: 19em; */
+  height: 15em;
   text-align: center;
+  border-radius: 7px;
+  opacity: 0.9;
 }
 
 .cardvis {
@@ -59,22 +70,19 @@
   width: 30em;
   height: 5em;
   text-align: center;
-}
-
-.side {
-  display: flex;
-  flex-direction: row;
+  border-radius: 7px;
+  opacity: 0.9;
 }
 
 .inputfield {
   padding: 10px;
 }
 
-.uvw {
+/* .uvw {
   display: flex;
   flex-wrap: wrap;
 }
 
 .uvw > div[class*="col-"] {
   display: flex;
-}
+} */
