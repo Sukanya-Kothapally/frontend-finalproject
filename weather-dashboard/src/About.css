@@ -10,13 +10,13 @@
   margin-right: 0;
 }
 .about .card {
-  box-shadow: 0 0 20px #ccc;
-  height: 25em;
+  box-shadow: 0 0 10px #ccc;
+  height: 28em;
   width: 20em;
 }
 .about .card img {
   width: 100%;
-  height: 12em;
+  height: 15em;
 }
 .about .card-title {
   color: rgb(117, 87, 32);
@@ -27,6 +27,7 @@
 
 .border {
   background-color: rgba(250, 250, 250, 0.9);
+  color: #ff6700;
 }
 
 .abouthead {
@@ -34,16 +35,18 @@
 }
 
 .cardabout {
-  box-shadow: 0 0 20px #ccc;
-  background-color: rgba(250, 250, 250, 0.9);
+  box-shadow: 0 0 10px #ccc;
+  background-color: rgba(250, 250, 250, 0.8);
   font-size: 12px;
   width: 45em;
-  height: 7em;
+  height: 10em;
   border-radius: 7px;
 }
 
 .aboutname {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
 }
 
 .info {
