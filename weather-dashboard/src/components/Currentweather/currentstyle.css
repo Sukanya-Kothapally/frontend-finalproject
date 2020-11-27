@@ -2,8 +2,8 @@
   max-width: 50px;
 }
 .card {
-  box-shadow: 0 0 20px #ccc;
-  background-color: rgba(250, 250, 250, 0.9);
+  box-shadow: 0 0 10px #ccc;
+  background-color: rgba(250, 250, 250, 0.8);
   width: 30em;
   height: 7em;
   border-radius: 7px;
