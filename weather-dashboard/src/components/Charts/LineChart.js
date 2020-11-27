@@ -72,8 +72,8 @@ class LineChart extends Component {
           <div>
               <Line
                 data={this.state.Data}
-                height={15}
-                width ={25}
+                // height={15}
+                // width ={25}
                 options={{
                   responsive: true,
     
