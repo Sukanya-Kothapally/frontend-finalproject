@@ -8,9 +8,10 @@ class About extends React.Component {
       return(
       <div>
         <h3 className="text-center abouthead">
-              <span className="border p-2">About Us</span></h3><br/>
+              <span className="border p-2"><b>About Us</b></span></h3><br/>
               <div className="row p"> 
                 <div className="mx-auto col-md-4 col-lg-4 col-sm-12">
+                <div className="d-flex justify-content-center">
                 <div className="cardabout">
                     <div className="card-body">
                           <div className="aboutname">
@@ -25,12 +26,13 @@ class About extends React.Component {
                       </div>
                     </div>
                  </div>
+                 </div>
             </div>
             
       <div className="about">
           <div className="row">
-              <div className="mx-auto col-md-4 col-lg-4 col-sm-12">
-                  <div className="card">
+              <div className="col-md-6 col-lg-6 col-sm-12">
+                  <div className="mx-auto card">
                       <div className="card-img">
                           <img src={jprofile} id="image1" className="img-fluid" alt="j profilepicture" />
                       </div>
@@ -47,8 +49,8 @@ class About extends React.Component {
                       </div>
                   </div>
                 </div>
-              <div className="mx-auto col-md-4 col-lg-4 col-sm-12">
-                  <div className="card">
+              <div className="col-md-6 col-lg-6 col-sm-12">
+                  <div className="mx-auto card">
                       <div className="card-img">
                           <img src={spicture} id="image1" className="img-fluid" alt="S profilepicture" />
                       </div>
