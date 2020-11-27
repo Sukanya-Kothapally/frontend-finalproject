@@ -59,7 +59,7 @@ class About extends React.Component {
                           <p className="card-text">Computer Science Graduate Student</p>
                           <p className="info">Specialization in Software Engineering and Databases.</p>
                       </div>
-                      <div class="card-footer">
+                      <div className="card-footer">
                           <a href="https://www.linkedin.com/in/sukanyakothapally/" className="card-link">LinkedIn</a>
                       </div>
                   </div>
