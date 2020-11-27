@@ -49,7 +49,7 @@ class LineChart extends Component {
                     data: temp_temperature,
                     fill: true,
                     lineTension: 0.2,
-                    backgroundColor: "#4b40e0",
+                    backgroundColor: "#41d33b",
                     pointBorderColor: "#00a2ff",
                     pointBackgroundColor: "#00a2ff",
                     pointBorderWidth: 1,
