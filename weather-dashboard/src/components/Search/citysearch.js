@@ -127,7 +127,7 @@ class SearchCity extends Component {
           </div>
           {/* </div> */}
           <div className="row mt-4">
-          <div className="col-md-6 col-lg-6 col-sm-12">
+          <div className="col-md-7 col-lg-6 col-sm-12">
                 <div className="cardline">
                 <div className="card-body">
               <LineChart
@@ -138,7 +138,7 @@ class SearchCity extends Component {
           </div>
           </div>
           </div>
-          <div className="col-md-6 col-lg-6 col-sm-12">
+          <div className="col-md-7 col-lg-6 col-sm-12">
                 <div className="cardbar">
                 <div className="card-body">
               <BarChart
