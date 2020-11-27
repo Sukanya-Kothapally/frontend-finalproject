@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import jprofile from "./profile.jpg";
+import spicture from "./Picture.jpeg";
 class About extends React.Component {
     
     render() {
@@ -38,7 +39,7 @@ class About extends React.Component {
                           <p className="card-text">
                               Computer Science Graduate Student
                           </p>
-                          <p className="info">Specialization in Machine Learning and Artificial Intelligence
+                          <p className="info">Specialization in Machine Learning, Artificial Intelligence
                           and Databases.</p>
                       </div>
                       <div className="card-footer">
@@ -49,14 +50,15 @@ class About extends React.Component {
               <div className="mx-auto col-md-4 col-lg-4 col-sm-12">
                   <div className="card">
                       <div className="card-img">
-                          <img src="" className="img-fluid" alt="" />
+                          <img src={spicture} id="image1" className="img-fluid" alt="S profilepicture" />
                       </div>
                       <div className="card-body">
                           <h4 className="card-title">Sukanya Kothapally</h4>
                           <p className="card-text">Computer Science Graduate Student</p>
+                          <p className="info">Specialization in Software Engineering and Databases.</p>
                       </div>
                       <div class="card-footer">
-                          <a href="https://www.goggle.com" className="card-link">LinkedIn</a>
+                          <a href="https://www.linkedin.com/in/sukanyakothapally/" className="card-link">LinkedIn</a>
                       </div>
                   </div>
               </div>
