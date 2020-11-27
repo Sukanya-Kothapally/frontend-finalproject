@@ -49,3 +49,46 @@
 .info {
   font-size: 12px;
 }
+
+@media screen and (max-width: 850px) {
+  .cardabout {
+    box-shadow: 0 0 20px #ccc;
+    background-color: rgba(250, 250, 250, 0.9);
+    width: 20em;
+    height: 10em;
+    border-radius: 7px;
+  }
+
+  .p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .p > div[class*="col-"] {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .cardabout {
+    box-shadow: 0 0 20px #ccc;
+    background-color: rgba(250, 250, 250, 0.9);
+    width: 20em;
+    height: 10em;
+    border-radius: 7px;
+  }
+  .p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .p > div[class*="col-"] {
+    display: flex;
+  }
+
+  .about .card {
+    box-shadow: 0 0 20px #ccc;
+    height: 28em;
+    width: 15em;
+  }
+}
