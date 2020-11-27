@@ -15,63 +15,63 @@
 }
 
 .cardline {
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 10px #ccc;
   background-color: #fafafa;
   /* width: 25em; */
   height: 20em;
   text-align: center;
   border-radius: 7px;
   width: 32rem;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .cardbar {
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 10px #ccc;
   background-color: #fafafa;
   /* width: 25em; */
   height: 20em;
   text-align: center;
   width: 32rem;
   border-radius: 7px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .carduv {
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 10px #ccc;
   background-color: #fafafa;
   /* width: 15em; */
   height: 15em;
   text-align: center;
   border-radius: 7px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 .cardwind {
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 10px #ccc;
   background-color: #fafafa;
   /* width: 15em; */
   height: 15em;
   text-align: center;
   border-radius: 7px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .cardhum {
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 10px #ccc;
   background-color: #fafafa;
   /* width: 19em; */
   height: 15em;
   text-align: center;
   border-radius: 7px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .cardvis {
-  box-shadow: 0 0 20px #ccc;
+  box-shadow: 0 0 10px #ccc;
   background-color: #fafafa;
   width: 30em;
   height: 5em;
   text-align: center;
   border-radius: 7px;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .inputfield {
@@ -80,6 +80,10 @@
 .graphnames {
   font-weight: bold;
   font-size: small;
+}
+
+::placeholder {
+  padding-left: 5px;
 }
 
 @media screen and (max-width: 500px) {
