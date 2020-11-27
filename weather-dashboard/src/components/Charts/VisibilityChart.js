@@ -53,7 +53,6 @@ class VisibilityChart extends React.Component {
               data={this.state.Data}
               height={30}
             />
-  
         </div>
       );
   
