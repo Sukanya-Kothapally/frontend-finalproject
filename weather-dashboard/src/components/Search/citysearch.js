@@ -24,7 +24,8 @@ class SearchCity extends Component {
         var lat = position.coords.latitude;
         var lon = position.coords.longitude;
         //console.log(position);
-        axios.get
+        axios.
+        get
         (
           "https://api.openweathermap.org/data/2.5/weather?lat=" + lat +"&lon=" +lon +"&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8"
         )
@@ -48,7 +49,7 @@ class SearchCity extends Component {
     if(inputcity!==""){
     axios.get
     (
-      "https://api.openweathermap.org/data/2.5/weather?q=" + this.state.search + "&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8"
+      "https://api.openweathermap.org/data/2.5/weather?q=" + this.state.search + "&units=imperial&appid=771164bf0a4b1c7e73d4a81d4f3b9485"
     )
     .then((response) => {
       if (response.status === 400 || response.status === 500 || response.status === 404) {
@@ -176,12 +177,14 @@ class SearchCity extends Component {
         <div className="col-md-4 col-lg-4 col-sm-12">
         <div className="cardhum">
         <div className="card-body">
+        <p className="humi"><b>Humidity</b></p>
         <div className="d-flex justify-content-center">
-        <p className="humidity"><b>Humidity</b></p>
+        <div className="humdiv">
           <HumidityChart
                 lat ={this.state.latitude}
                 lon ={this.state.longitude}
               />
+              </div>
               </div>
               </div>
               </div>
