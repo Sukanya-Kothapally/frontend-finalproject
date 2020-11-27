@@ -133,7 +133,8 @@ class SearchCity extends Component {
               <LineChart
                 lat ={this.state.latitude}
                 lon ={this.state.longitude}
-              />
+              /><br></br>
+              <p className="graphnames">X-axis: Time , Y-axis:Temperature in °F</p>
           </div>
           </div>
           </div>
@@ -143,7 +144,8 @@ class SearchCity extends Component {
               <BarChart
                 lat ={this.state.latitude}
                 lon ={this.state.longitude}
-              />
+              /><br></br>
+              <p className="graphnames">X-axis: Days , Y-axis:Temperature in °F</p>
           </div>          
           </div>
           </div>
