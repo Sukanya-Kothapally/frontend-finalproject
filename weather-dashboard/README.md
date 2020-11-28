@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+## A React Weather Dashboard Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deployed on link
 
-## Available Scripts
+#### Features
 
-In the project directory, you can run:
+- Displays Weather details for current location when the page is loaded.
+- Displays Weather details for any other location.
+- Weather details include temperature,minimum and maximum temperature for next week, UVindex, WindSpeed, Humidity, Visibilty.
+- Gives an Alert message if the city name entered is wrong.
+- When the current location is blocked, the application still allows to search for any other location.
 
-### `yarn start`
+#### Technologies
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- React
+- Javscript
+- HTML
+- CSS
+- Bootstrap
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+#### Packages
 
-### `yarn test`
+- axios
+- react-environment-chart
+- react-score-indicator
+- react-chartjs-2
+- react-bootstrap
+- moment
+- react-router-dom
+- reactstrap
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### API
 
-### `yarn build`
+- OpenWeather Map
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Samples used
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- https://reactjsexample.com/a-react_environment_charts/
+- https://reactjsexample.com/react_component_to_display_a_score_with_a_steps_chart/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### To run the application
 
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- npm install
+- npm start
+- watch localhost:3000 in the browser
