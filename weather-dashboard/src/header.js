@@ -24,7 +24,7 @@ const Header = () => {
               variant="light"
               expand="sm"
             >  
-            <NavbarBrand style={headStyle} href="/">
+            <NavbarBrand style={headStyle} href="/frontend-finalproject/">
               <img src={logo} width="40"   height="35" alt="weather icon" />
               <span className="wtitle">&nbsp;Weather Dashboard</span>
             </NavbarBrand>
@@ -36,7 +36,7 @@ const Header = () => {
               <Collapse id="basic-navbar-nav" isOpen={isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink className="font-weight-normal" href="/About" style={headerstyle}> 
+                  <NavLink className="font-weight-normal" href="/frontend-finalproject/#/About" style={headerstyle}> 
                     About   
                   </NavLink>
                 </NavItem>
