@@ -22,13 +22,11 @@ class LineChart extends Component {
 
     componentDidMount = () => {
         
-        console.log("Hourly");
-        axios
-          .get(
-             "https://api.openweathermap.org/data/2.5/onecall?lat="+this.props.lat+"&lon="+this.props.lon+"&exclude=minutely&appid=61d5f8577e9dc21f1a56b94167a17bf8&units=imperial"
+        //console.log("Hourly");
+        axios.get("https://api.openweathermap.org/data/2.5/onecall?lat="+this.props.lat+"&lon="+this.props.lon+"&exclude=minutely&appid=61d5f8577e9dc21f1a56b94167a17bf8&units=imperial"
             )
           .then((response) => {
-            console.log(response);
+            //console.log(response);
             var hourly = response.data["hourly"];
             //console.log(hourly);
             

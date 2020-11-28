@@ -21,11 +21,10 @@ class Windchart extends React.Component {
             }
           }
           componentDidMount = () =>{   
-            axios.
-            get("https://api.openweathermap.org/data/2.5/onecall?lat="+this.props.lat+"&lon="+this.props.lon+"&exclude=minutely&appid=771164bf0a4b1c7e73d4a81d4f3b9485&units=imperial")
+            axios.get("https://api.openweathermap.org/data/2.5/onecall?lat="+this.props.lat+"&lon="+this.props.lon+"&exclude=minutely&appid=771164bf0a4b1c7e73d4a81d4f3b9485&units=imperial")
             .then((response) => {
                 const win = response.data.current.wind_speed;
-                console.log(win);
+                //console.log(win);
                 this.setState({
                     wind:win,  
                     height:180                
@@ -36,7 +35,7 @@ class Windchart extends React.Component {
           render(){
               return(
                   <div>
-                      <p class="ws"><b>Wind Speed</b></p>
+                      <p className="ws"><b>Wind Speed</b></p>
                       <Electricity 
                       value={this.state.wind}
                       height={this.state.height}

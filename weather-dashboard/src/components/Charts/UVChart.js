@@ -28,7 +28,7 @@ class UVChart extends React.Component {
 
             .then((response) => {
                 const uv = response.data.current.uvi;
-                console.log(uv);
+                //console.log(uv);
                 this.setState({
                     uvindex:uv, 
                 }

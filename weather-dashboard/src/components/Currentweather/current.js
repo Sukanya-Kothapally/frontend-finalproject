@@ -9,7 +9,7 @@ class CurrentWeather extends Component
           name: undefined,
           temperature: undefined,
           description: undefined,
-          icon: undefined,
+          icon: "",
         };
       }
 
@@ -24,12 +24,9 @@ class CurrentWeather extends Component
       
       componentDidMount = () => {
         
-        axios
-          .get(
-            "https://api.openweathermap.org/data/2.5/weather?lat="+this.props.lat+"&lon="+this.props.lon+"&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8"
-            )
+        axios.get("https://api.openweathermap.org/data/2.5/weather?lat="+this.props.lat+"&lon="+this.props.lon+"&units=imperial&appid=61d5f8577e9dc21f1a56b94167a17bf8")
           .then((response) => {
-              console.log(response);
+            //console.log(response);
             const des = response.data.weather[0].description;
             const temp = response.data.main.temp;
             const name = response.data.name;
