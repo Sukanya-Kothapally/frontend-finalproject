@@ -27,3 +27,14 @@
     border-radius: 7px;
   }
 }
+
+@media screen and (max-width: 800px) and (min-width: 700px) {
+  .card {
+    box-shadow: 0 0 20px #ccc;
+    background-color: rgba(250, 250, 250, 0.9);
+    width: 21em;
+    height: 7em;
+    border-radius: 7px;
+    margin-right: 10%;
+  }
+}

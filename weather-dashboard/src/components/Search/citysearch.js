@@ -120,7 +120,7 @@ class SearchCity extends Component {
           </div>
           </div>
           {/* </div> */}
-          <div className="row mt-4">
+          <div className="row lw mt-4">
           <div className="col-md-7 col-lg-6 col-sm-12">
                 <div className="cardline">
                 <div className="card-body">

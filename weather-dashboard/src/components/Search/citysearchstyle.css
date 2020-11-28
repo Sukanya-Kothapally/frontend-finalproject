@@ -93,27 +93,38 @@
 }
 
 @media screen and (max-width: 500px) {
+  .lw {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .lw > div[class*="col-"] {
+    display: flex;
+  }
   .cardline {
     box-shadow: 0 0 20px #ccc;
     background-color: #fafafa;
     /* width: 25em; */
-    height: 20em;
+    height: 10em;
     text-align: center;
     border-radius: 7px;
     width: 21em;
     opacity: 0.9;
+    margin-bottom: 10px;
   }
 
   .cardbar {
     box-shadow: 0 0 20px #ccc;
     background-color: #fafafa;
     /* width: 25em; */
-    height: 20em;
+    height: 10em;
     text-align: center;
     width: 21em;
     border-radius: 7px;
     opacity: 0.9;
+    margin-bottom: 10px;
   }
+
   .carduv {
     box-shadow: 0 0 20px #ccc;
     background-color: #fafafa;
@@ -122,6 +133,7 @@
     text-align: center;
     border-radius: 7px;
     opacity: 0.9;
+    margin-bottom: 10px;
   }
   .cardwind {
     box-shadow: 0 0 20px #ccc;
@@ -131,6 +143,7 @@
     text-align: center;
     border-radius: 7px;
     opacity: 0.9;
+    margin-bottom: 10px;
   }
 
   .cardhum {
@@ -141,6 +154,7 @@
     text-align: center;
     border-radius: 7px;
     opacity: 0.9;
+    margin-bottom: 10px;
   }
 
   .cardvis {
@@ -182,7 +196,32 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) and (min-width: 750px) {
+  .cardline {
+    box-shadow: 0 0 20px #ccc;
+    background-color: #fafafa;
+    /* width: 25em; */
+    height: 20em;
+    text-align: center;
+    border-radius: 7px;
+    width: 29rem;
+    opacity: 0.9;
+    margin-bottom: 10px;
+    margin-left: 25%;
+  }
+
+  .cardbar {
+    box-shadow: 0 0 20px #ccc;
+    background-color: #fafafa;
+    /* width: 25em; */
+    height: 20em;
+    text-align: center;
+    width: 29rem;
+    border-radius: 7px;
+    opacity: 0.9;
+    margin-left: 25%;
+  }
+
   .carduv {
     box-shadow: 0 0 20px #ccc;
     background-color: #fafafa;
@@ -206,7 +245,7 @@
   .cardhum {
     box-shadow: 0 0 20px #ccc;
     background-color: #fafafa;
-    width: 17em;
+    width: 14em;
     height: 15em;
     text-align: center;
     border-radius: 7px;
