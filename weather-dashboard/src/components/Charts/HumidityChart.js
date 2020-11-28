@@ -42,6 +42,7 @@ class HumidityChart extends Component
      render() {
         return (
           <div>
+            {/* <p className="humi"><b>Humidity</b></p> */}
               <Humidity
                 height = {this.state.height}
                 value = {this.state.humidity} />

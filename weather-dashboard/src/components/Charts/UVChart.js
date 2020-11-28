@@ -22,7 +22,10 @@ class UVChart extends React.Component {
           }
           componentDidMount = () =>
           {   
-          axios.get("https://api.openweathermap.org/data/2.5/onecall?lat="+this.props.lat+"&lon="+this.props.lat+"&exclude=minutely&appid=61d5f8577e9dc21f1a56b94167a17bf8&units=imperial")
+          axios.
+          get 
+          ("https://api.openweathermap.org/data/2.5/onecall?lat="+this.props.lat+"&lon="+this.props.lat+"&exclude=minutely&appid=771164bf0a4b1c7e73d4a81d4f3b9485&units=imperial")
+
             .then((response) => {
                 const uv = response.data.current.uvi;
                 console.log(uv);
