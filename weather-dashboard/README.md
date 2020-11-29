@@ -32,6 +32,7 @@ Deployed on https://jethaharsha.github.io/frontend-finalproject/
 ### API
 
 - OpenWeather Map
+- Geolocation
 
 ### Samples used
 
