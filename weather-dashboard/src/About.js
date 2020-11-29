@@ -2,6 +2,9 @@ import React from "react";
 import "./About.css";
 import jprofile from "./profile.jpg";
 import spicture from "./Picture.jpeg";
+
+//This component has details about the application  and 
+//the developers of this application details.
 class About extends React.Component {
     
     render() {

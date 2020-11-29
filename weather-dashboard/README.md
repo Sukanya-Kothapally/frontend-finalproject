@@ -1,6 +1,6 @@
 ## A React Weather Dashboard Application
 
-Deployed on link
+Deployed on https://jethaharsha.github.io/frontend-finalproject/
 
 #### Features
 

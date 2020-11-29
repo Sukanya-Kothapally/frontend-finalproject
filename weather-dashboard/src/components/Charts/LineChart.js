@@ -3,6 +3,9 @@ import { Line } from "react-chartjs-2";
 import axios from "axios";
 import moment from 'moment';
 
+//This component has code to fetch hourly details from 
+//api and render it to line graph.
+
 class LineChart extends Component {
     constructor(props) {
       super(props);

@@ -2,6 +2,9 @@ import React from "react";
 import axios from "axios";
 import {HorizontalBar} from 'react-chartjs-2';
 
+//This component has code to fetch visibilty details from 
+//api and render it to horizontal bar graph.
+
 class VisibilityChart extends React.Component {
     constructor(props) {
       super(props);

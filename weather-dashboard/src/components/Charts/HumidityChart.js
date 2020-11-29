@@ -3,6 +3,9 @@ import {Humidity} from 'react-environment-chart';
 import axios from "axios";
 import "./Humidity.css";
 
+//This component has code to fetch humidity data from 
+//api and render it to react environment chart called humidity.
+
 class HumidityChart extends Component
 {
     constructor(props) {

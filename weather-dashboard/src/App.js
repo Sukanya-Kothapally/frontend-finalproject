@@ -6,6 +6,9 @@ import Header from "./header";
 import Homepage from "./view/home"
 import "./App.css";
 
+
+//Main application flow starts here
+
 function App() {
   return (
     <div className="App">

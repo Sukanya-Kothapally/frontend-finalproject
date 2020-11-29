@@ -9,6 +9,11 @@ import HumidityChart from "../Charts/HumidityChart";
 import VisibilityChart from "../Charts/VisibilityChart";
 import "./citysearchstyle.css";
 
+
+//This component has all the major components like current weather,
+//line chart,Barchart,UV chart,Wind chart,Visibilty and humidity.This is the main
+//part of the application.
+
 class SearchCity extends Component {
   state = {
     name: "",
@@ -74,7 +79,9 @@ class SearchCity extends Component {
     alert("Please Enter City!");
   }
   };
-
+  
+  // this function changes the search value as given in search fiels from UI.
+  
   onClickCityChange = (event) => {
     const citySearch = event.target.value;
     this.setState({

@@ -1,6 +1,9 @@
 import React ,{Component} from 'react';
 import axios from "axios";
 import "./currentstyle.css";
+
+//This component has all the current weather components where
+// it displays current temperature, description of weather.
 class CurrentWeather extends Component
 {
     constructor(props) {

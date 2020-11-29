@@ -3,6 +3,9 @@ import axios from "axios";
 import ReactStoreIndicator from 'react-score-indicator';
 import "./UVChart.css";
 
+//This component has code to fetch UVindex data from 
+//api and render it to ReactStoreIndicator called react-score-indicator.
+
 class UVChart extends React.Component {
     constructor(props) {
         super(props);

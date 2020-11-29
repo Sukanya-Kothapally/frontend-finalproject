@@ -3,6 +3,9 @@ import axios from "axios";
 import moment from "moment";
 import { Bar } from "react-chartjs-2";
 
+//This component has code to fetch daily forecast details from 
+//api and render it to bar graph for minimum and maximum temperature.
+
 class BarChart extends React.Component {
     constructor(props) {
       super(props);

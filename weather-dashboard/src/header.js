@@ -4,6 +4,9 @@ import logo from "./logo.png";
 import "./headerstyle.css";
 import "./App.css";
 
+//This function is called from homepage where it contains
+//the major route logic and navbar code.
+
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   

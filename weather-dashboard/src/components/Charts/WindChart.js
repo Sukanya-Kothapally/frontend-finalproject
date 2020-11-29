@@ -3,6 +3,9 @@ import axios from "axios";
 import {Electricity} from 'react-environment-chart';
 import "./WindChart.css";
 
+//This component has code to fetch windspeed data from 
+//api and render it to react environment chart called electricity.
+
 class Windchart extends React.Component {
     constructor(props) {
         super(props);
