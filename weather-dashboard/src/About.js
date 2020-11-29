@@ -67,7 +67,7 @@ class About extends React.Component {
         </div>
 
     </div>
-    <nav className="footer navbar justify-content-center fixed-bottom">
+    <nav className="footer navbar justify-content-center">
         <small>© 2020 All rights reserved</small>
       </nav>
 </div>
